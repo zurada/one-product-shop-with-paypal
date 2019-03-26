@@ -7,11 +7,11 @@ class Locale extends React.Component {
     constructor(props) {
         super(props);
         this.refresh = props.refresh;
-        this._onSetLanguageToItalian = this._onSetLanguageToItalian.bind(this);
+        this._onSetLanguageTo = this._onSetLanguageTo.bind(this);
     }
 
-    _onSetLanguageToItalian() {
-        config.translation.setLanguage('it');
+    _onSetLanguageTo(lang) {
+        config.translation.setLanguage(lang);
         this.refresh();
     }
 
@@ -19,9 +19,9 @@ class Locale extends React.Component {
         return (
             <div className="fixed-bottom">
                 <ButtonGroup className="btn-group-sm float-right">
-                    <Button onClick={this._onSetLanguageToItalian}>DE</Button>
-                    <Button>EN</Button>
-                    <Button>PL</Button>
+                    <Button onClick={() => this._onSetLanguageTo("en")}>EN</Button>
+                    <Button onClick={() => this._onSetLanguageTo("de")}>DE</Button>
+                    <Button onClick={() => this._onSetLanguageTo("pl")}>PL</Button>
                 </ButtonGroup>
             </div>
         );

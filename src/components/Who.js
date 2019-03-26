@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Col, Container, Row} from 'reactstrap';
 import "./Who.css";
 import author from "../img/author.png"
-
+import config from "../config/config";
 class Who extends Component {
 
     render() {
@@ -18,7 +18,7 @@ class Who extends Component {
                                 <Col sm="8">
                                     <h2 className="heading wow animated fadeInUp">Nicolas Adamson</h2>
                                     <h4 className="subheading muted wow animated fadeInUp">Typographer, Writer,
-                                        Father...</h4>
+                                        Father... {config.translation.how}</h4>
                                 </Col>
                             </Row>
                             <Row>

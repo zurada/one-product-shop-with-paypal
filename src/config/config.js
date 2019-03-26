@@ -10,7 +10,7 @@ const config =
                     softBoiledEgg: "Soft-boiled egg",
                     choice: "How to choose the egg"
                 },
-                it: {
+                pl: {
                     how: "Come vuoi il tuo uovo oggi?",
                     boiledEgg: "Uovo sodo",
                     softBoiledEgg: "Uovo alla coque",
