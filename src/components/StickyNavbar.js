@@ -60,7 +60,7 @@ class StickyNavbar extends Component {
                         <NavItem>
 
                             <Animate
-                                show={this.state.currentNavBarPos === 0}
+                                show={this.state.currentNavBarPos <= 0}
                                 duration={200}
                                 style={{
                                     "white-space": "nowrap",
