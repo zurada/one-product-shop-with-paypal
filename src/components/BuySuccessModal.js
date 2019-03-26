@@ -18,7 +18,7 @@ class BuySuccessModal extends React.Component {
 
     open(transactionId) {
         this.setState ({
-            modal: true,
+            modal: false,
             transactionId: transactionId
         });
     }
