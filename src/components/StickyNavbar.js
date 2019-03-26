@@ -41,7 +41,7 @@ class StickyNavbar extends Component {
 
     render() {
         return (
-            <Navbar id="navbar" expand="md" sticky="top" className="navbar navbar-default">
+            <Navbar id="navbar" light expand="md" sticky="top" className="navbar navbar-default">
                 {/*
                     <NavbarBrand href="/">reactstrap</NavbarBrand>
 */}
