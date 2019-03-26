@@ -1,0 +1,119 @@
+header {
+    background: url('../img/slider1.jpg') no-repeat center center;
+    background-size:cover;
+    position: relative;
+    overflow: hidden;
+}
+
+header.container {
+    position: relative;
+    height: 100%;
+}
+
+
+header .intro-book {
+    position: relative;
+}
+
+.intro-book img {
+    display: block;
+    margin:0 auto;
+    width:100%;
+    transition: all 0.3s ease;
+    max-width:450px;
+}
+
+@media(max-width:991px) {
+    .intro-book img {
+        width:450px;
+        position: relative;
+        margin:0 auto;
+    }
+}
+
+header .intro-text {
+    position: relative;
+
+}
+
+@media(max-width:768px) {
+    .intro-book img {
+        width:250px;
+        position: relative;
+        margin:0 auto;
+        bottom:-160px;
+    }
+}
+
+
+
+header .heading {
+    font-family:'Proxima Bold';
+    color:white;
+    font-size:40px;
+    margin:10px 0;
+}
+
+header .subheading {
+    color:white;
+    opacity: .5;
+    font-size:24px;
+    margin:10px 0px 30px;
+}
+
+header p {
+    margin:20px 0;
+    font-size:20px;
+    color:white;
+    line-height: 34px;
+}
+
+
+
+
+.btn {
+    display:inline-block;
+    font-family:'Proxima Bold';
+    font-size:18px;
+    padding:15px 30px;
+    margin:20px 10px;
+    border-radius:3px;
+    transition: all 0.3s ease;
+}
+
+.btn.btn-green {
+    background: #7cc576;
+    border:3px solid #7cc576;
+    color:white;
+}
+
+.btn.btn-green:hover {
+    background: #96db90;
+    border-color: #96db90;
+}
+
+.btn.btn-white {
+    border:3px solid white;
+    background: transparent;
+    color:white;
+}
+
+.btn.btn-white:hover {
+    background:white;
+    color:#7cc576;
+}
+
+.btn .price {
+    font-family:'Proxima';
+    margin-left:10px;
+}
+
+.btn-dropdown {
+    border:1px solid #cccccc;
+    font-family:'Proxima';
+    color:#888888;
+}
+
+.btn-dropdown span.caret {
+    margin-left:60px;
+}

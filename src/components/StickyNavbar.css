@@ -1,0 +1,105 @@
+.main-nav {
+
+}
+
+.navbar {
+    box-shadow:0 3px 5px rgba(0,0,0,.05);
+    border-radius: 1px;
+    border: 1px solid transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+.navbar .navbar-brand {
+    padding:0;
+}
+
+.navbar .navbar-brand img {
+    margin:10px 0;
+}
+
+@media(max-width:768px) {
+    .navbar .navbar-brand img {
+        margin:10px 20px;
+    }
+    .navbar-default .navbar-nav {
+        padding-top:30px;
+    }
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar-header, .navbar-collapse {
+    margin-top:10px;
+}
+
+.navbar-default .navbar-nav > li {
+    margin-left:40px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color:#bbb;
+}
+
+.navbar-default .navbar-nav > li > a:focus:after {
+    width:0;
+}
+
+.navbar-default .navbar-nav > li > a:after {
+    position: relative;
+    display: block;
+    width:0%;
+    height:3px;
+    background:#7cc576;
+    content:' ';
+    margin:0 auto;
+    margin-top:3px;
+    transition: all 0.3s ease;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li.active > a {
+    color: #484d53;
+}
+@media(min-width:768px) {
+
+    .navbar-default .navbar-nav > li > a:hover:after, .navbar-default .navbar-nav > li.active > a:after {
+        width:100%;
+    }
+}
+
+.navbar-nav > li > div > a.btn {
+    color:white;
+    margin:0;
+    width:0;
+    padding-left:0; padding-right:0;
+    overflow: hidden;
+    margin-top:-5px;
+    border-width:0px;
+}
+
+.navbar-nav > li > div > a.btn.btn-green {
+    background:white;
+    color:#7cc576;
+    border-color:#7cc576;
+}
+
+.navbar-nav > li > div > a.btn.btn-green:hover {
+    background:#7cc576;
+    border:2px solid #7cc576;
+    color:white;
+}
+
+.navbar-nav > li > div >a.btn:after {
+    display: none;
+}
+
+.navbar .navbar-nav > li > div > a.btn {
+    width:auto;
+    padding:15px;
+    border-width:2px;
+}
