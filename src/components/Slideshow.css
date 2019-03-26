@@ -1,0 +1,45 @@
+.slideshow img {
+    width:100%;
+    transition: all 0.3s ease;
+    border-radius:4px;
+}
+
+.carousel-control-next {
+    filter: invert(30%);
+}
+
+.carousel-control-prev {
+    filter: invert(30%);
+}
+
+.carousel-indicators {
+    filter: invert(30%);
+}
+
+
+h1 {font-size:40px;}
+h2 {font-size:36px;}
+h3 {font-size:30px;}
+h4 {font-size:24px;}
+h5 {font-size:20px;}
+h6 {font-size:18px;}
+
+.heading {
+    color:#484d53;
+    font-family:'Proxima Bold';
+    line-height:38px;
+}
+
+.subheading {
+    color:#6a727b;
+    font-family:'Proxima';
+    line-height:38px;
+    margin:30px 0;
+    margin-bottom:50px;
+}
+
+p.small {
+    font-size:18px;
+    line-height: 36px;
+    color:#6a727b;
+}
