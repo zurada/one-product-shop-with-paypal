@@ -8,7 +8,7 @@ class BuySuccessModal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            modal: true,
+            modal: false,
             transactionId : "#"
         };
 
