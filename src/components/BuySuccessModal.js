@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from 'reactstrap';
 import checkbox from "../img/checkbox.png";
 import Container from "reactstrap/es/Container";
 import Row from "reactstrap/es/Row";
 import Col from "reactstrap/es/Col";
 import config from "../config/config";
+
 class BuySuccessModal extends React.Component {
     constructor(props) {
         super(props);
@@ -50,7 +51,7 @@ class BuySuccessModal extends React.Component {
 
                     </ModalBody>
                     <ModalFooter>
-                        <Button  className="btn btn-green" onClick={this.close}>Close</Button>{' '}
+                        <Button  className="btn btn-green" onClick={this.close}>{translation.button_close}</Button>
                     </ModalFooter>
                 </Modal>
             </div>
