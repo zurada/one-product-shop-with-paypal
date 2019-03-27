@@ -4,11 +4,12 @@ import checkbox from "../img/checkbox.png";
 import Container from "reactstrap/es/Container";
 import Row from "reactstrap/es/Row";
 import Col from "reactstrap/es/Col";
+import config from "../config/config";
 class BuySuccessModal extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            modal: true,
+            modal: false,
             transactionId : "#"
         };
 
@@ -29,10 +30,11 @@ class BuySuccessModal extends React.Component {
     }
 
     render() {
+        let translation = config.translation.success_modal;
         return (
             <div>
                 <Modal isOpen={this.state.modal} toggle={this.toggle}>
-                    <ModalHeader toggle={this.toggle}>Purchase Finished</ModalHeader>
+                    <ModalHeader toggle={this.toggle}>{translation.title}</ModalHeader>
                     <ModalBody>
                         <Container>
                             <Row>
@@ -41,8 +43,8 @@ class BuySuccessModal extends React.Component {
                                 </Col>
                             </Row>
                             <Row>
-                                <p className="small">Thank you! Your purchase was successful. Please save your transaction ID: {this.state.transactionId}.
-                                    We will send you the book as soon as possible!</p>
+                                <p className="small">{translation.info_1}{this.state.transactionId}
+                                    {translation.info_2}</p>
                             </Row>
                         </Container>
 
