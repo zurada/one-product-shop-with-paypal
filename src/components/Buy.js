@@ -11,6 +11,11 @@ class Buy extends React.Component {
         this.buySuccessModal = React.createRef();
     }
 
+    getLanguage() {
+        let currentLanguage = config.translation.getLanguage();
+        return config.paypal.languages[currentLanguage];
+    }
+
     render() {
         let translation = config.translation.buy;
         return (
@@ -29,7 +34,8 @@ class Buy extends React.Component {
                                 }}
                                 options={{
                                     currency: config.paypal.currency,
-                                    clientId: config.paypal.clientId
+                                    clientId: config.paypal.clientId,
+                                    //OPTIONAL: now choose the browser locale, else: locale: this.getLanguage()
                                 }}
                             />
                         </Col>

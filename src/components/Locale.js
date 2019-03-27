@@ -19,7 +19,6 @@ class Locale extends React.Component {
         return (
             <div className="fixed-bottom">
                 <ButtonGroup className="btn-group-sm float-right">
-                    <Button onClick={() => this._onSetLanguageTo("en")}>EN</Button>
                     <Button onClick={() => this._onSetLanguageTo("de")}>DE</Button>
                     <Button onClick={() => this._onSetLanguageTo("pl")}>PL</Button>
                 </ButtonGroup>
