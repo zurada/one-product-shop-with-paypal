@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Collapse, Nav, Navbar, NavbarToggler, NavItem, NavLink} from 'reactstrap';
 import "./StickyNavbar.css";
 import {Animate} from "react-show";
+import config from "../config/config";
 
 class StickyNavbar extends Component {
     constructor(props) {
@@ -40,6 +41,7 @@ class StickyNavbar extends Component {
     }
 
     render() {
+        let translation = config.translation.navbar;
         return (
             <Navbar id="navbar" light expand="md" sticky="top" className="navbar navbar-default">
                 {/*
@@ -49,13 +51,13 @@ class StickyNavbar extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="#about">Book</NavLink>
+                            <NavLink href="#about">{translation.about}</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#who">Author</NavLink>
+                            <NavLink href="#who">{translation.who}</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="#contact">Contact</NavLink>
+                            <NavLink href="#contact">{translation.contact}</NavLink>
                         </NavItem>
                         <NavItem>
 
@@ -82,7 +84,7 @@ class StickyNavbar extends Component {
                                     height: 0
                                 }}
                             >
-                                <NavLink href="#buy" className=" btn btn-green">Purchase Book</NavLink>
+                                <NavLink href="#buy" className=" btn btn-green">{translation.buy}</NavLink>
                             </Animate>
                         </NavItem>
 

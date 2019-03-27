@@ -1,26 +1,30 @@
 import React, {Component} from 'react';
 import {Col, Container, Row} from 'reactstrap';
+import config from "../config/config";
 
 class Contact extends Component {
 
     render() {
+        let translation = config.translation.contact;
         return (
             <section id="contact">
                 <Container>
                     <Row>
                         <Col md="6" className="text-left text-center-mobile wow animated fadeInUp contact-details">
-                            <h3 className="heading no-margin wow animated fadeInUp">Contact Author</h3>
-                            <h4 className="subheading muted no-margin wow animated fadeInUp">Say hi or ask
-                                something.</h4>
+                            <h3 className="heading no-margin wow animated fadeInUp">{translation.title}</h3>
+                            <h4 className="subheading muted no-margin wow animated fadeInUp">{translation.subtitle}</h4>
                             <div className="details">
-                                <h6 className="heading no-margin">Nicolas Adamson</h6>
-                                <p className="small muted wow animated fadeInUp no-margin">3125 Flanigan Oaks
-                                    Drive <br/>
-                                    Capitol Heights, MD 20027</p>
+                                <h6 className="heading no-margin">{config.contact.company_name}</h6>
+                                <p className="small muted wow animated fadeInUp no-margin">
+                                    {config.contact.address_street}
+                                    <br/>
+                                    {config.contact.address_city}</p>
                             </div>
                             <div className="details">
-                                <h4 className="subheading accent no-margin wow animated fadeInUp">+ 301 324 9131 <br/>
-                                    info@nicolasadamson.com</h4>
+                                <h4 className="subheading accent no-margin wow animated fadeInUp">
+                                    {config.contact.phone}
+                                    <br/>
+                                    {config.contact.email}</h4>
                             </div>
                         </Col>
                     </Row>
