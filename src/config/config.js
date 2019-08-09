@@ -65,7 +65,7 @@ const config =
                     },
                     who: {
                         title: "Jacek Pulikowski",
-                        subtitle: "Ehemann, Vater von drei Kindern, Hochschullehrer ...",
+                        subtitle: "ein Ehemann, Vater von drei Kindern, akademischer Lehrer...",
                         description: "Dr. Jacek Pulikowski ist ein glücklicher Ehemann von Jadwiga (ab 1976), Vater von drei Kindern, Schwieger- und Großvater. Seit vielen Jahren engagiert er sich in der Familienpastoral und Familienberatung und hat Tausenden von Ehen und Liebenden geholfen, glückliche Beziehungen zu entdecken.",
                         description_right: " Die Regelmäßigkeiten, die er während der Gespräche bemerkte, schrieb er in zahlreichen Büchern und Artikeln, die ziemlich schnell Tausende von Lesern gewannen. Infolgedessen hat er sich zu einer bekannten und angesehenen Autorität in Themen wie Liebe, Reinheit, Sexualität, Vaterschaft und Elternschaft entwickelt. Alle seine Bücher wurden mehrmals in Tausenden von Exemplaren veröffentlicht, und einige wurden in Fremdsprachen übersetzt, einschließlich Englisch. Herr Pulikowski ist ein beliebter Redner, der zu Vorträgen in Europa, den USA und Kanada eingeladen ist. Dort trifft er Jugendliche, Verlobte, Ehen, Lehrer und Schwiegereltern. "
                     }

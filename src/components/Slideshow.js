@@ -53,7 +53,7 @@ class Slideshow extends Component {
                 >
                         <img src={item.src} alt={item.altText}  className={this.hasGradient && "img-fading"}/>
                     <div className="carousel-caption center-text-block">
-                        <h1>{item.caption}</h1>
+                        <h4 className="inspiration-text">{item.caption}</h4>
                     </div>
                 </CarouselItem>
             );
