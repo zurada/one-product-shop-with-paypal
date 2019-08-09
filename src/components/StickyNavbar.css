@@ -56,7 +56,7 @@
     display: block;
     width:0%;
     height:3px;
-    background:#7cc576;
+    background:#738A98;
     content:' ';
     margin:0 auto;
     margin-top:3px;
@@ -84,13 +84,13 @@
 
 .navbar-nav > li > div > a.btn.btn-green {
     background:white;
-    color:#7cc576;
-    border-color:#7cc576;
+    color:#6D8995;
+    border-color:#6D8995;
 }
 
 .navbar-nav > li > div > a.btn.btn-green:hover {
-    background:#7cc576;
-    border:2px solid #7cc576;
+    background:#6D8995;
+    border:2px solid #6D8995;
     color:white;
 }
 

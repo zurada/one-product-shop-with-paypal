@@ -1,6 +1,6 @@
 import React from 'react';
 import config from '../config/config';
-import {Badge, Button, ButtonGroup} from "reactstrap";
+import {Button, ButtonGroup} from "reactstrap";
 
 class Locale extends React.Component {
 
@@ -18,7 +18,7 @@ class Locale extends React.Component {
     render() {
         return (
             <div className="fixed-bottom">
-                <ButtonGroup className="btn-group-sm float-right">
+                <ButtonGroup className="btn-group-sm float-left">
                     <Button onClick={() => this._onSetLanguageTo("de")}>DE</Button>
                     <Button onClick={() => this._onSetLanguageTo("pl")}>PL</Button>
                 </ButtonGroup>

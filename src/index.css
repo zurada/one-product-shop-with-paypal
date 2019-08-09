@@ -10,8 +10,8 @@
 
 
 body {
-  margin: 0;
-  padding: 0;
+  #margin: 0;
+  #padding: 0;
   font-family:'Proxima';
   overflow-x:hidden;
   -webkit-font-smoothing: antialiased;
@@ -35,4 +35,9 @@ p {
   margin: 20px 0;
   font-size: 30px;
   line-height: 42px;
+}
+
+.img-fading{
+  -webkit-mask-image:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
 }

@@ -1,5 +1,5 @@
 header {
-    background: url('../img/slider1.jpg') no-repeat center center;
+    background: url('../img/blue-sky-bright-cloudiness-1431822.jpg') no-repeat center center;
     background-size:cover;
     position: relative;
     overflow: hidden;
@@ -20,15 +20,16 @@ header .intro-book {
     margin:0 auto;
     width:100%;
     transition: all 0.3s ease;
-    max-width:450px;
+
 }
 
-@media(max-width:991px) {
-    .intro-book img {
-        width:450px;
-        position: relative;
-        margin:0 auto;
-    }
+.img-grey-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128,128,128,0.5);
 }
 
 header .intro-text {
@@ -41,7 +42,6 @@ header .intro-text {
         width:250px;
         position: relative;
         margin:0 auto;
-        bottom:-160px;
     }
 }
 
@@ -60,6 +60,14 @@ header .subheading {
     font-size:24px;
     margin:10px 0px 30px;
 }
+
+header .authorName {
+    color:white;
+    opacity: .5;
+    font-size:24px;
+    margin:10px 0px 30px;
+}
+
 
 header p {
     margin:20px 0;
@@ -82,14 +90,14 @@ header p {
 }
 
 .btn.btn-green {
-    background: #7cc576;
-    border:3px solid #7cc576;
+    background: #ff816b;
+    border:3px solid #ff816b;
     color:white;
 }
 
 .btn.btn-green:hover {
-    background: #96db90;
-    border-color: #96db90;
+    background: #EF6353;
+    border-color: #EF6353;
 }
 
 .btn.btn-white {
@@ -100,7 +108,7 @@ header p {
 
 .btn.btn-white:hover {
     background:white;
-    color:#7cc576;
+    color:#EF6353;
 }
 
 .btn .price {

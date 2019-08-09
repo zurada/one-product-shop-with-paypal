@@ -7,6 +7,7 @@ import WOW from "wowjs";
 import Who from "./components/Who";
 import Contact from "./components/Contact";
 import Locale from "./components/Locale";
+import FullScreenSlideshow from "./components/FullScreenSlideshow";
 
 class App extends React.Component {
 
@@ -21,14 +22,17 @@ class App extends React.Component {
         wow.init();
     }
 
-    refresh(){
+    refresh() {
         this.setState({});
     }
 
     render() {
         return (
             <div className="wow fadeIn">
-                <Intro/>
+                <header>
+                    <Intro/>
+                    <FullScreenSlideshow/>
+                </header>
                 <Locale refresh={this.refresh}/>
                 <div>
                     <StickyNavbar/>

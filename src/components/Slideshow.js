@@ -1,31 +1,12 @@
 import React, {Component} from 'react';
 import {Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem} from 'reactstrap';
 import "./Slideshow.css";
-import back from "../img/back.jpg";
-import cover from "../img/cover.jpg";
-import inside from "../img/inside.jpg";
-
-const items = [
-    {
-        src: back,
-        altText: '',
-        caption: ''
-    },
-    {
-        src: inside,
-        altText: '',
-        caption: ''
-    },
-    {
-        src: cover,
-        altText: '',
-        caption: ''
-    }
-];
 
 class Slideshow extends Component {
     constructor(props) {
         super(props);
+        this.items = props.items;
+        this.hasGradient = props.hasGradient;
         this.state = {activeIndex: 0};
         this.next = this.next.bind(this);
         this.previous = this.previous.bind(this);
@@ -44,13 +25,13 @@ class Slideshow extends Component {
 
     next() {
         if (this.animating) return;
-        const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
+        const nextIndex = this.state.activeIndex === this.items.length - 1 ? 0 : this.state.activeIndex + 1;
         this.setState({activeIndex: nextIndex});
     }
 
     previous() {
         if (this.animating) return;
-        const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
+        const nextIndex = this.state.activeIndex === 0 ? this.items.length - 1 : this.state.activeIndex - 1;
         this.setState({activeIndex: nextIndex});
     }
 
@@ -62,15 +43,18 @@ class Slideshow extends Component {
     render() {
         const {activeIndex} = this.state;
 
-        const slides = items.map((item) => {
+        const slides = this.items.map((item) => {
             return (
                 <CarouselItem
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                     key={item.src}
+                    className="align-items-center justify-content-center text-center"
                 >
-                    <img src={item.src} alt={item.altText}/>
-                    <CarouselCaption captionText={item.caption} captionHeader={item.caption}/>
+                        <img src={item.src} alt={item.altText}  className={this.hasGradient && "img-fading"}/>
+                    <div className="carousel-caption center-text-block">
+                        <h1>{item.caption}</h1>
+                    </div>
                 </CarouselItem>
             );
         });
@@ -82,7 +66,7 @@ class Slideshow extends Component {
                 next={this.next}
                 previous={this.previous}
             >
-                <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex}/>
+                <CarouselIndicators items={this.items} activeIndex={activeIndex} onClickHandler={this.goToIndex}/>
                 {slides}
                 <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous}/>
                 <CarouselControl direction="next" directionText="Next" onClickHandler={this.next}/>

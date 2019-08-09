@@ -21,18 +21,25 @@ const config =
             new LocalizedStrings({
                 de: {
                     intro: {
-                        title: "Es lohnt sich, Vater zu sein, die wichtigste Karriere eines Mannes.",
+                        title: "Ewa fühlt anders.",
                         subtitle: "Jacek Pulikowski",
-                        description: "Einer der schönsten Sätze in diesem Buch ist: Das Wichtigste, was ein Vater seinen Kindern geben kann, ist einfach wahrhaftig, weise, gereift, treu, und nur für ihre lebenslange Liebe zu ihrer Mutter. Dies ist eine ebenso interessante Lektüre für Männer sowie Frauen: Ehefrauen und Mütter sowie für Bräute. ",
+                        description: "Männer und Frauen sind unterschiedlich. \n" +
+                            "Mit Hand auf Herz: Wie gut verstehen Sie Ihren Geliebten? Haben Sie den Eindruck, dass Sie manchmal auf ganz anderen Wellen senden oder sich von Ihm berührt oder berührt fühlen? Und vielleicht, abgesehen von positiven Gefühlen, spüren Sie auch das Gegenteil davon?",
                         button_about: "Über das Buch",
                         button_buy: "Buch kaufen",
                         button_buy_price: "11.99 CHF"
                     },
                     about: {
                         title: "Über das Buch",
-                        description_short: "Herr Jacek sagt oft, dass jeder Mann zum Vater gemacht wird, unabhängig davon, ob er eine Familie hat oder nicht. Daher ist dieses Buch allgemeiner, als es scheinen mag.",
-                        description_long_1: "Ein faszinierendes Buch über die Rolle von Ehemann und Vater in der Familie, Weisheit und Verantwortung, Zärtlichkeit und Fürsorge sind die Qualitäten eines echten Mannes. Ein moderner Vater geht oft verloren, sucht nach Erfüllung in der Arbeit, zieht Kinder zur Mutter, aber er ist dazu da Vater, sollte er Vater werden wollen, die Vaterschaft zum Hauptbestandteil seiner Lebenslaufbahn machen. ",
-                        description_long_2: "INHALTSVERZEICHNIS: Männlichkeit gegen Weiblichkeit: Prädispositionen; Selbstwertgefühl; Antworten; Erwartungen; Männlichkeit und Vaterschaft: Literatur; Begriff  Vaterschaft; Funktionen des Vaters; Verantwortlichkeiten; Eigenschaften des guten Vaters; und der Mann im Haus, warum sollte der Mann Macht ausüben? Die Macht des Ehemanns, die Teilung der Macht, die unveräußerlichen Funktionen des Mannes, Einige Schwierigkeiten bei der Ausübung der Macht, Gottes Plan für die Familie: Gehorsam gegenüber dem Willen Gottes, Gottes Autorität, Gehorsamausbildung, Vaterlosigkeit : Ist die Vaterschaft verloren? Warum geht die Vaterschaft verloren? Wie kann die Vaterschaft wieder aufgebaut werden? Was können Sie heute tun, um Ihre Vaterschaft zu verbessern?"
+                        description_short: "Es ist wahr, dass sie beide eine ganze Reihe von Gefühlen erfahren, aber jeder anders und - was sehr wichtig ist - jedes Geschlecht anders externalisiert. Für Frauen hat die emotionale Sphäre jedoch mehr Gewicht. Sie sind sensibler und bereit, die Realität viel häufiger durch das Prisma ihrer Gefühle zu lesen als Männer. Deshalb ist es so wichtig, dass wir alle lernen, emotional zu kommunizieren. Über deine Gefühle zu sprechen und sie zu benennen ist nicht einfach, aber sehr hilfreich für das gegenseitige Verständnis. Kommunikation soll zur Gemeinschaft oder Einheit führen.",
+                        description_long_1: "Dr. Jacek Pulikowski, der Expert und Autorität in Themen, wie Liebe, Reinheit, Sexualität, Vaterschaft, Elternschaft, kennt diese Probleme nicht nur aus eigener Erfahrung, aber auch durch vielen schmerzhaften Erfahrungen von Ehegatten und Paare, die zu ihm kommen sich zu raten. Trotzdem oder vielleicht deshalb sind seine Bücher nicht pessimistisch, sondern geben Hoffnung. Der Autor zeigt uns, dass es möglich ist, gebrochene Beziehungen mit ein wenig Aufwand und gutem Willen zu reparieren. Sie können kommunizieren und so Ihre eheliche Liebe und Beziehungen zu Liebenden erneuern, vertiefen.",
+                        description_long_2: "Deshalb lohnt es sich, dieses Buch zu lesen, bevor etwas schief geht. Umso nützlicher kann es sein, wenn Eva noch nach ihrem Adam sucht oder Adam nach Eva sucht. Denn wenn wir wollen, dass die andere Person wirklich nahe ist, ist eine Kenntnis ihres Inneren erforderlich. nicht nur Ansichten, sondern auch Gefühle. Wir brauchen auch eine solche Offenheit von unserer Seite. Ich lade Sie ein, dieses Buch zu lesen!",
+                        description_long_3: "Es wäre nicht möglich gewesen, dieses Buch zu veröffentlichen, wenn nicht die Unterstutzung der Bewegung Licht-Leben in Deutschland und der Schweiz, das Internationale Marianum-Zentrum von Carlsberg in Deutschland und das Engagement aller Menschen guten Willens, die zur Veröffentlichung dieser Broschüre beigetragen haben. Insbesondere danke ich für den Aufwand und die Arbeit, die alphabetischer Reihenfolge aufgelisteten Übersetzerinnen: Jolanta Bonecka, Kathrin Kasperlik, Sandra Maleska, Małgorzata Marx, Jagoda Stempczyńska und Marta und Frank Werner. Bei der Abfassung der Einleitung wurde ein Textfragment der Originalausgabe von Frau Małgorzata Durnowska verwendet."
+                    },
+                    fullScreenSlideShow: {
+                        inspire1: "inspiration 1 (daj sie poprowadzic kobiecie, zeby ja zrozumiec)",
+                        inspire2: "inspiration 2 (zrozumiesz lepiej relacje)",
+                        inspire3: "inspiration 3 (ona i ty bedziecie szczesliwi)"
                     },
                     buy: {
                         text_1: "Der Preis beträgt CHF 11.99 Sie können mit bezahlen",
@@ -58,25 +65,32 @@ const config =
                     },
                     who: {
                         title: "Jacek Pulikowski",
-                        subtitle: "Ehemann, Vater von drei Kindern, Dozent ...",
-                        description: "Gemeinsam mit meiner Frau sind wir seit vielen Jahren in der Familienpastoral tätig und unterhalten ua eine Eheberatungsstelle. Wir werden ständig durch die Erfahrungen anderer Menschen bereichert, die uns vertrauen und uns mit ihren Eheproblemen anvertrauen.",
-                        description_right: "Er ist seit über zwanzig Jahren in die Familienpastoral eingebunden und leitet Klassen bei der Familienstudie an der Theologischen Fakultät der Adam-Mickiewicz-Universität in Posen sowie zahlreiche Kurse für Lehrer. und elterlich. "
+                        subtitle: "Ehemann, Vater von drei Kindern, Hochschullehrer ...",
+                        description: "Dr. Jacek Pulikowski ist ein glücklicher Ehemann von Jadwiga (ab 1976), Vater von drei Kindern, Schwieger- und Großvater. Seit vielen Jahren engagiert er sich in der Familienpastoral und Familienberatung und hat Tausenden von Ehen und Liebenden geholfen, glückliche Beziehungen zu entdecken.",
+                        description_right: " Die Regelmäßigkeiten, die er während der Gespräche bemerkte, schrieb er in zahlreichen Büchern und Artikeln, die ziemlich schnell Tausende von Lesern gewannen. Infolgedessen hat er sich zu einer bekannten und angesehenen Autorität in Themen wie Liebe, Reinheit, Sexualität, Vaterschaft und Elternschaft entwickelt. Alle seine Bücher wurden mehrmals in Tausenden von Exemplaren veröffentlicht, und einige wurden in Fremdsprachen übersetzt, einschließlich Englisch. Herr Pulikowski ist ein beliebter Redner, der zu Vorträgen in Europa, den USA und Kanada eingeladen ist. Dort trifft er Jugendliche, Verlobte, Ehen, Lehrer und Schwiegereltern. "
                     }
                 },
                 pl: {
                     intro: {
-                        title: "Warto być ojcem. Najważniejsza kariera mężczyzny.",
+                        title: "Ewa czuje inaczej.",
                         subtitle: "Jacek Pulikowski",
-                        description: "Jedno z piękniejszych zdań w tej książce brzmi: \"Najważniejsze, co może ojciec dać swoim dzieciom, to po prostu prawdziwie, mądrze, dojrzale, wiernie, wyłącznie i dozgonnie kochać ich matkę\". Jest to lektura równie ciekawa dla mężczyzn jak i kobiet: żon i matek, a także dla narzeczonych.",
+                        description: "Kobiety i mężczyźni różnią się od siebie. " +
+                            "Z ręką na sercu: jak dobrze rozumiesz swojego Ukochanego, swoją Ukochaną? Czy masz wrażenie, że czasem nadajecie na zupełnie innych falach, albo że poczułeś się przez Nią lub Niego dotknięty? A może obok pozytywnych uczuć względem ukochanej osoby, odczuwasz w sobie również ich przeciwieństwo?\n",
                         button_about: "O książce",
                         button_buy: "Kup książkę",
                         button_buy_price: "11.99 CHF"
                     },
+                    fullScreenSlideShow: {
+                        inspire1: "inspiration 1 (daj sie poprowadzic kobiecie, zeby ja zrozumiec)",
+                        inspire2: "inspiration 2 (zrozumiesz lepiej relacje)",
+                        inspire3: "inspiration 3 (ona i ty bedziecie szczesliwi)"
+                    },
                     about: {
                         title: "O książce",
-                        description_short: "Pan Jacek często mówi, że każdy mężczyzna stworzony jest do \"ojcowania\". Bez względu na to, czy ma rodzinę czy też nie. Dlatego ta książka jest bardziej uniwersalna, niż mogłoby się wydawać.",
-                        description_long_1: "Fascynująca książka o roli męża i ojca w rodzinie. Mądrość i odpowiedzialność, czułość i troskliwość to cechy prawdziwego mężczyzny. Współczesny ojciec często bywa zagubiony, szuka spełnienia w pracy zawodowej, wychowanie dzieci pozostawiając matce. Jednakże jest stworzony do tego, by być ojcem. Powinien chcieć zostać ojcem, uczynić ojcostwo główną częścią swojej kariery życiowej.",
-                        description_long_2: "SPIS TREŚCI: Męskość wobec kobiecości: Predyspozycje; Poczucie własnej wartości; Reagowanie; Oczekiwania; Męskość i ojcostwo: Literatura; Pojęcie \"ojcostwo\"; Funkcje ojca; Zakres odpowiedzialności; Cechy dobrego ojca; Sprawowanie władzy ojcowskiej: Pytania  władzę ojca i męża w domu; Dlaczego właśnie mężczyzna ma sprawować władzę?; Zakres władzy męża; Podział władzy; Niezbywalne funkcje mężczyzny; Niektóre trudności w sprawowaniu władzy; Boży plan dla rodziny: Posłuszeństwo woli Bożej; Władza po Bożemu; O wychowaniu do posłuszeństwa; Zagubione ojcostwo: Czy ojcostwo jest zagubione?; Dlaczego ojcostwo jest zagubione?; Jak odbudować ojcostwo?; Co zrobić dziś, by poprawić swe ojcostwo?"
+                        description_short: "Prawdą jest, że oboje przeżywają całą gamę uczuć, ale każdy inaczej i - co bardzo ważne - każda płeć inaczej to uzewnętrznia. Jednak to dla kobiet sfera emocjonalna ma większą wagę. Są one bardziej wrażliwe i skłonne odczytywać rzeczywistość przez pryzmat swoich uczuć o wiele częściej niż mężczyźni. Dlatego tak bardzo ważne jest, abyśmy wszyscy nauczyli się komunikować emocjonalnie. Mówienie o swoich uczuciach, nazywanie ich nie jest rzeczą łatwą, ale bardzo pomocną we wzajemnym zrozumieniu. Komunikacja bowiem ma doprowadzić do komunii, czyli jedności.",
+                        description_long_1: "Dr. Jacek Pulikowski, znany i szanowany autorytet  w tematyce takiej jak: miłość, czystość, płciowość, ojcostwo, rodzicielstwo, problemy te zna nie tylko z własnego doświadczenia, lecz także z wielu bolesnych przeżyć małżonków i par przychodzących do niego po radę. Mimo to, a może właśnie dlatego jego książki nie są pesymistyczne, lecz dają nadzieję. Autor pokazuje nam, że można z odrobiną wysiłku i dobrej woli naprawić zerwane więzi. Można porozumieć się i dzięki temu odnowić, pogłębić miłość małżeńską i relacje u zakochanych.",
+                        description_long_2: "Dlatego właśnie warto tę książkę przestudiować, zanim zacznie się coś psuć. Tym bardziej może być pożyteczna wtedy, gdy Ewa jeszcze szuka swojego Adama lub Adam rozgląda się za Ewą. Jeśli bowiem pragniemy, by drugi człowiek stał się prawdziwie bliski, potrzebna jest znajomość jego wnętrza; nie tylko poglądów, ale i uczuć. Potrzebna jest również taka otwartość z naszej strony. Zapraszam zatem do lektury!",
+                        description_long_3: "Wydanie tej książeczki nie byłoby możliwe, gdyby nie wsparcie wspólnoty Domowego Kościoła w Niemczech i Szwajcarii, międzynarodowego centrum Marianum z Carlsberga w Niemczech oraz gdyby nie zaangażowanie wszystkich ludzi dobrej woli, którzy przyczynili się do wydania tej książeczki. W szczególności dziękuję za wysiłek i pracę włożoną w tłumaczenie (w kolejności alfabetycznej): Jolanta Bonecka, Kathrin Kasperlik, Sandra Maleska, Małgorzata Marx, Jagoda Stempczyńska, oraz Marta i Frank Werner. Przy pisaniu wstępu został wykorzystany fragment tekstu zamieszczonego w oryginalnym wydaniu przez panią Małgorzatę Durnowską.\n"
                     },
                     buy: {
                         text_1: "Cena wynosi 11,99 CHF. Możesz zapłacić za pomocą swojej",
@@ -103,8 +117,8 @@ const config =
                     who: {
                         title: "Jacek Pulikowski",
                         subtitle: "Mąż, ojciec trojga dzieci, wykładowca...",
-                        description: "Wspólnie z żoną od lat działamy w duszpasterstwie rodzin i między innymi prowadzimy poradnię małżeńską. Jesteśmy stale ubogacani doświadczeniami innych ludzi, którzy nas obdarzają zaufaniem, powierzając nam swoje małżeńskie problemy.",
-                        description_right: "Od ponad dwudziestu lat jest zaangażowany w działalność Duszpasterstwa Rodzin. Prowadzi zajęcia na Studium Rodziny przy Wydziale Teologii UAM w Poznaniu oraz liczne kursy dla nauczycieli. Swoją wiedzą i doświadczeniem służy wielu małżeństwom w kryzysie, ale także przygotowuje młodych do odpowiedzialnego podjęcia powołania małżeńskiego i rodzicielskiego."
+                        description: "Dr. Jacek Pulikowski jest szczęśliwym mężem Jadwigi (od 1976 roku), ojcem trójki dzieci, teściem i dziadkiem.  Od wielu lat zaangażowany w działalność Duszpasterstwa Rodzin i Poradnictwa Rodzinnego, pomógł już tysiącom małżeństw i zakochanych w odkryciu szczęśliwych relacji.",
+                        description_right: " Prawidłowości, które zauważył w czasie rozmów spisał w licznych książkach i artykułach, które dość szybko zdobyły tysiące czytelników. Przez to stał się znanym i szanowanym autorytetem w tematyce takiej jak: miłość, czystość, płciowość, ojcostwo, rodzicielstwo. Wszystkie jego książki wielokrotnie wznawiano w wielotysięcznych nakładach, a niektóre przetłumaczono na języki obce, m.in. angielski. Pan Pulikowski jest popularnym mówcą zapraszanym na wykłady w Europie, USA i Kanadzie, gdzie spotyka się z młodzieżą, narzeczonymi, małżeństwami, nauczycielami i… teściami."
                     }
                 }
 

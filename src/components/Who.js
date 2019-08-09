@@ -13,10 +13,10 @@ class Who extends Component {
                     <Row>
                         <Col md="6">
                             <Row className="author">
-                                <Col sm="4">
+                                <Col lg="4" md="5" sm="12">
                                     <img src={author} alt="" className="pic"/>
                                 </Col>
-                                <Col sm="8">
+                                <Col lg="8" md="7" sm="12">
                                     <h2 className="heading wow animated fadeInUp">{translation.title}</h2>
                                     <h4 className="subheading muted wow animated fadeInUp">
                                         {translation.subtitle}

@@ -43,3 +43,21 @@ p.small {
     line-height: 36px;
     color:#6a727b;
 }
+
+p.smaller {
+    font-size:14px;
+    line-height: 36px;
+    color:#6a727b;
+}
+
+.center-text-block {
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
