@@ -3,11 +3,11 @@ import LocalizedStrings from 'react-localization';
 const config =
     {
         contact: {
-            company_name: "Die Veröffentlichung im Namen von Jacek Pulikowski",
+            company_name: "Stella Matutina Schweiz",
             address_street: "Höflistrasse 22",
             address_city: "8135 Langnau am Albis, CH",
             phone: "+ 41 301 324 911",
-            email: "info@veroeffentlichung.com"
+            email: "info@starkefamilie.ch"
         },
         paypal: {
             languages: {
@@ -21,7 +21,7 @@ const config =
             new LocalizedStrings({
                 de: {
                     intro: {
-                        title: "Ewa fühlt anders.",
+                        title: "Eva fühlt anders.",
                         subtitle: "Jacek Pulikowski",
                         description: "Männer und Frauen sind unterschiedlich. \n" +
                             "Mit Hand auf Herz: Wie gut verstehen Sie Ihren Geliebten? Haben Sie den Eindruck, dass Sie manchmal auf ganz anderen Wellen senden oder sich von Ihm berührt oder berührt fühlen? Und vielleicht, abgesehen von positiven Gefühlen, spüren Sie auch das Gegenteil davon?",
@@ -37,9 +37,9 @@ const config =
                         description_long_3: "Es wäre nicht möglich gewesen, dieses Buch zu veröffentlichen, wenn nicht die Unterstutzung der Bewegung Licht-Leben in Deutschland und der Schweiz, das Internationale Marianum-Zentrum von Carlsberg in Deutschland und das Engagement aller Menschen guten Willens, die zur Veröffentlichung dieser Broschüre beigetragen haben. Insbesondere danke ich für den Aufwand und die Arbeit, die alphabetischer Reihenfolge aufgelisteten Übersetzerinnen: Jolanta Bonecka, Kathrin Kasperlik, Sandra Maleska, Małgorzata Marx, Jagoda Stempczyńska und Marta und Frank Werner. Bei der Abfassung der Einleitung wurde ein Textfragment der Originalausgabe von Frau Małgorzata Durnowska verwendet."
                     },
                     fullScreenSlideShow: {
-                        inspire1: "inspiration 1 (daj sie poprowadzic kobiecie, zeby ja zrozumiec)",
-                        inspire2: "inspiration 2 (zrozumiesz lepiej relacje)",
-                        inspire3: "inspiration 3 (ona i ty bedziecie szczesliwi)"
+                        inspire1: "Stehst du auf Herrausforderungen? Du gibst nicht ohne einen Kampf auf? Dann versuch deine Frau zu verstehen!",
+                        inspire2: "Unsere Vorfahren waren der Meinung, dass man etwas reparieren muss, wenn es kaputt geht. Heute denken wir, dass man es gegen etwas Neues tauschen muss.",
+                        inspire3: "Kämpf um eine gute Beziehung mit der Frau deines Lebens."
                     },
                     buy: {
                         text_1: "Der Preis beträgt CHF 11.99 Sie können mit bezahlen",
@@ -81,9 +81,9 @@ const config =
                         button_buy_price: "11.99 CHF"
                     },
                     fullScreenSlideShow: {
-                        inspire1: "inspiration 1 (daj sie poprowadzic kobiecie, zeby ja zrozumiec)",
-                        inspire2: "inspiration 2 (zrozumiesz lepiej relacje)",
-                        inspire3: "inspiration 3 (ona i ty bedziecie szczesliwi)"
+                        inspire1: "Lubisz naprawdę trudne wyzwania? Nie poddajesz się bez walki? W takim razie spróbuj zrozumieć swoją kobietę. ",
+                        inspire2: "Nasi przodkowie uważali, że jak coś się zepsuje to trzeba to naprawić. Dziś uważamy, że jak coś się zepsuje to trzeba to wymienić na nowe.",
+                        inspire3: "Walcz o dobre relacje z wybranką swojego życia."
                     },
                     about: {
                         title: "O książce",
