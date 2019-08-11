@@ -41,10 +41,10 @@ const config =
                         inspire3: "Kämpf um eine gute Beziehung mit der Frau deines Lebens."
                     },
                     buy: {
-                        text_1: "Der Preis beträgt CHF 11.99 Sie können mit bezahlen",
+                        text_1: "Der Preis beträgt CHF 11.99. Sie können mit ",
                         text_2: " oder",
                         bold_1: "Kreditkarte",
-                        bold_2: "Paypal-Konto."
+                        bold_2: "Paypal-Konto bezahlen."
                     },
                     success_modal: {
                         title: "Sie haben einen Kauf getätigt!",
@@ -53,7 +53,7 @@ const config =
                         button_close: "Schließen"
                     },
                     contact: {
-                        title: "Kontakt mit dem Verlag",
+                        title: "Kontakt",
                         subtitle: "Bitte kontaktieren Sie uns."
                     },
                     navbar: {
