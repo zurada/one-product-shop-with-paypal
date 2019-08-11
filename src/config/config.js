@@ -23,8 +23,7 @@ const config =
                     intro: {
                         title: "Eva fühlt anders.",
                         subtitle: "Jacek Pulikowski",
-                        description: "Männer und Frauen sind unterschiedlich. \n" +
-                            "Mit Hand auf Herz: Wie gut verstehen Sie Ihren Geliebten? Haben Sie den Eindruck, dass Sie manchmal auf ganz anderen Wellen senden oder sich von Ihm berührt oder berührt fühlen? Und vielleicht, abgesehen von positiven Gefühlen, spüren Sie auch das Gegenteil davon?",
+                        description: "Früher dachte man, dass Mount Everest im Winter nicht zu besteigen ist. \n Früher dachte man, dass der Mond nicht einzunehmen ist. \n Heute denkt man, dass Frauen nicht zu verstehen sind. \n Dieses Buch beweist, dass es auch anders geht!",
                         button_about: "Über das Buch",
                         button_buy: "Buch kaufen",
                         button_buy_price: "11.99 CHF"
@@ -74,8 +73,7 @@ const config =
                     intro: {
                         title: "Ewa czuje inaczej.",
                         subtitle: "Jacek Pulikowski",
-                        description: "Kobiety i mężczyźni różnią się od siebie. " +
-                            "Z ręką na sercu: jak dobrze rozumiesz swojego Ukochanego, swoją Ukochaną? Czy masz wrażenie, że czasem nadajecie na zupełnie innych falach, albo że poczułeś się przez Nią lub Niego dotknięty? A może obok pozytywnych uczuć względem ukochanej osoby, odczuwasz w sobie również ich przeciwieństwo?\n",
+                        description: "Kiedyś uważano, że góry Everest nie da się zdobyć zimą." \n + "Kiedyś uważano, że księżyca nie można zdobyć. \n Dziś uważa się, że kobiety nie da się zrozumieć. \n \n Ta książka udowadnia, że może być inaczej",
                         button_about: "O książce",
                         button_buy: "Kup książkę",
                         button_buy_price: "11.99 CHF"
