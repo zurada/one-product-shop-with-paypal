@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import {Carousel, CarouselCaption, CarouselControl, CarouselIndicators, CarouselItem} from 'reactstrap';
+import {Carousel, CarouselControl, CarouselIndicators, CarouselItem} from 'reactstrap';
 import "./Slideshow.css";
 
 class Slideshow extends Component {
+
     constructor(props) {
         super(props);
-        this.items = props.items;
+        this.props = props;
         this.hasGradient = props.hasGradient;
         this.state = {activeIndex: 0};
         this.next = this.next.bind(this);
@@ -41,6 +42,8 @@ class Slideshow extends Component {
     }
 
     render() {
+        this.items = this.props.items;
+
         const {activeIndex} = this.state;
 
         const slides = this.items.map((item) => {

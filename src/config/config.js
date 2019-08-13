@@ -73,7 +73,7 @@ const config =
                     intro: {
                         title: "Ewa czuje inaczej.",
                         subtitle: "Jacek Pulikowski",
-                        description: "Kiedyś uważano, że góry Everest nie da się zdobyć zimą." \n + "Kiedyś uważano, że księżyca nie można zdobyć. \n Dziś uważa się, że kobiety nie da się zrozumieć. \n \n Ta książka udowadnia, że może być inaczej",
+                        description: "Kiedyś uważano, że góry Everest nie da się zdobyć zimą. Kiedyś uważano, że księżyca nie można zdobyć. \n Dziś uważa się, że kobiety nie da się zrozumieć. \n \n Ta książka udowadnia, że może być inaczej",
                         button_about: "O książce",
                         button_buy: "Kup książkę",
                         button_buy_price: "11.99 CHF"

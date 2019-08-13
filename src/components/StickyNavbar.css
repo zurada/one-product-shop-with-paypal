@@ -72,7 +72,7 @@
     }
 }
 
-.navbar-nav > li > div > a.btn {
+.navbar-nav > li  > a.btn {
     color:white;
     margin:0;
     width:0;
@@ -82,23 +82,23 @@
     border-width:0px;
 }
 
-.navbar-nav > li > div > a.btn.btn-green {
+.navbar-nav > li  > a.btn.btn-green {
     background:white;
     color:#6D8995;
     border-color:#6D8995;
 }
 
-.navbar-nav > li > div > a.btn.btn-green:hover {
+.navbar-nav > li  > a.btn.btn-green:hover {
     background:#6D8995;
     border:2px solid #6D8995;
     color:white;
 }
 
-.navbar-nav > li > div >a.btn:after {
+.navbar-nav > li  >a.btn:after {
     display: none;
 }
 
-.navbar .navbar-nav > li > div > a.btn {
+.navbar .navbar-nav > li  > a.btn {
     width:auto;
     padding:15px;
     border-width:2px;
