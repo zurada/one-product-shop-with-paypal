@@ -91,7 +91,7 @@ const config =
                         description_long_3: "Wydanie tej książeczki nie byłoby możliwe, gdyby nie wsparcie wspólnoty Domowego Kościoła w Niemczech i Szwajcarii, międzynarodowego centrum Marianum z Carlsberga w Niemczech oraz gdyby nie zaangażowanie wszystkich ludzi dobrej woli, którzy przyczynili się do wydania tej książeczki. \n"
                     },
                     buy: {
-                        text_1: "Cena wynosi 14,90 CHF. Możesz zapłacić za pomocą swojej",
+                        text_1: "Cena wynosi 14,90 CHF lub 12.90 EUR. Możesz zapłacić za pomocą swojej",
                         text_2: " lub",
                         bold_1: "karty kredytowej",
                         bold_2: "konta Paypal."
