@@ -41,7 +41,7 @@ const config =
                         inspire3: "Kämpf um eine gute Beziehung mit der Frau deines Lebens."
                     },
                     buy: {
-                        text_1: "Der Preis beträgt CHF 14.90. Sie können mit ",
+                        text_1: "Der Preis beträgt CHF 14.90 oder EUR 12.90. Sie können mit ",
                         text_2: " oder",
                         bold_1: "Kreditkarte",
                         bold_2: "Paypal-Konto bezahlen."
