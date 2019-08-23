@@ -6,7 +6,7 @@ const config =
             company_name: "Stella Matutina Schweiz",
             address_street: "Höflistrasse 22",
             address_city: "8135 Langnau am Albis, CH",
-            phone: "+ 41 788 446 169",
+            phone: "+41 788 446 169",
             email: "info@starkefamilie.ch"
         },
         paypal: {

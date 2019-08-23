@@ -38,7 +38,9 @@ class Buy extends React.Component {
     changeCurrency(event){
         this.setState({value: event.target.value});
         window.location.assign(this.updateURLParameter(window.location + '', "currency", event.target.value));
-
+        if( (window.location+'').indexOf("#") !== -1){
+            window.location.reload()
+        }
     }
 
     updateURLParameter(url, param, paramVal){
@@ -64,7 +66,7 @@ class Buy extends React.Component {
     findGetParameter(parameterName) {
         let result = null,
             tmp = [];
-        let items = window.location.search.substr(1).split("&");
+        let items = (window.location + '').substr(1).split("&");
         for (let index = 0; index < items.length; index++) {
             tmp = items[index].split("=");
             if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
@@ -79,7 +81,7 @@ class Buy extends React.Component {
             <section id="buy" className="buy-section">
                 <Container>
                     <Row>
-                        <Col md={{size: 8, offset: 2}} className="text-center wow animated fadeInUp">
+                        <Col md={{size: 8, offset: 2}} className="text-center wow animated fadeInUp" sttle="disabled">
                             <p className="white">{translation.text_1} <b>{translation.bold_1}</b>
                                 {translation.text_2} <b> {translation.bold_2} </b>
                             </p>
@@ -93,7 +95,10 @@ class Buy extends React.Component {
                                     ))}
                                 </select>
                             </div>
+                            <h1 className="white">Coming soon!</h1>
+                            <div style={{opacity: 0.2, disabled: true, pointerEvents: 'none'}}>
                                 <Paypal currency={this.findGetParameter("currency") || this.state.value} amount={this.state.value === 'EUR' ? 12.99 : 14.99}/>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
