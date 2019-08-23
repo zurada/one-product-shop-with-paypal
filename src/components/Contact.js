@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Col, Container, Row} from 'reactstrap';
 import config from "../config/config";
+import {Link } from "react-router-dom";
 
 class Contact extends Component {
 
@@ -26,6 +27,7 @@ class Contact extends Component {
                                     <br/>
                                     {config.contact.email}</h4>
                             </div>
+                            <Link to="/terms">{translation.terms_button}</Link>
                         </Col>
                     </Row>
 
