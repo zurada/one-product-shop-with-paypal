@@ -37,7 +37,7 @@ class Home extends React.Component {
                 <div>
                     <StickyNavbar/>
                     <About/>
-                    <Buy refresh={this.refresh}/>
+                    <Buy currency={this.props.match.params.id}/>
                     <Who/>
                     <Contact/>
                 </div>

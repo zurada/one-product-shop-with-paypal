@@ -27,7 +27,7 @@ class Contact extends Component {
                                     <br/>
                                     {config.contact.email}</h4>
                             </div>
-                            <Link to="/terms">{translation.terms_button}</Link>
+                            <Link to="/show/terms">{translation.terms_button}</Link>
                         </Col>
                     </Row>
 

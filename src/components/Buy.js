@@ -4,6 +4,9 @@ import "./Buy.css";
 import BuySuccessModal from "./BuySuccessModal";
 import config from '../config/config';
 import Paypal from "./Paypal";
+import {
+    withRouter
+} from 'react-router-dom'
 
 class Buy extends React.Component {
 
@@ -18,16 +21,15 @@ class Buy extends React.Component {
                 value: "EUR",
             }
         ],
-        value: "CHF",
+        currentCurrency: "?",
     };
 
     constructor(props) {
         super(props);
+        this.currency = props.currency || config.paypal.default_currency;
+        this.state.currentCurrency = this.currency;
         this.buySuccessModal = React.createRef();
-        this.refresh = props.refresh;
         this.changeCurrency = this.changeCurrency.bind(this);
-        this.state.value = this.findGetParameter("currency") || this.state.value;
-
     }
 
     getLanguage() {
@@ -36,47 +38,13 @@ class Buy extends React.Component {
     }
 
     changeCurrency(event){
-        this.setState({value: event.target.value});
-        window.location.assign(this.updateURLParameter(window.location + '', "currency", event.target.value));
-        if( (window.location+'').indexOf("#") !== -1){
-            window.location.reload()
-        }
-    }
-
-    updateURLParameter(url, param, paramVal){
-        let newAdditionalURL = "";
-        let tempArray = url.split("?");
-        let baseURL = tempArray[0];
-        let additionalURL = tempArray[1];
-        let temp = "";
-        if (additionalURL) {
-            tempArray = additionalURL.split("&");
-            for (let i=0; i<tempArray.length; i++){
-                if(tempArray[i].split('=')[0] != param){
-                    newAdditionalURL += temp + tempArray[i];
-                    temp = "&";
-                }
-            }
-        }
-
-        let rows_txt = temp + "" + param + "=" + paramVal;
-        return baseURL + "?" + newAdditionalURL + rows_txt;
-    }
-
-    findGetParameter(parameterName) {
-        let result = null,
-            tmp = [];
-        let items = (window.location + '').substr(1).split("&");
-        for (let index = 0; index < items.length; index++) {
-            tmp = items[index].split("=");
-            if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
-        }
-        return result;
+        this.props.history.push('/'+event.target.value+"#buy");
+        window.location.reload();
     }
 
     render() {
         let translation = config.translation.buy;
-        const { options, value } = this.state;
+        const { options, currentCurrency } = this.state;
         return (
             <section id="buy" className="buy-section">
                 <Container>
@@ -87,7 +55,7 @@ class Buy extends React.Component {
                             </p>
                             <BuySuccessModal ref={this.buySuccessModal}/>
                             <div className="form-group">
-                                <select className="form-control" onChange={this.changeCurrency} value={value}>
+                                <select className="form-control" onChange={this.changeCurrency} value={currentCurrency}>
                                     {options.map(item => (
                                         <option key={item.value} value={item.value}>
                                             {item.name}
@@ -95,9 +63,11 @@ class Buy extends React.Component {
                                     ))}
                                 </select>
                             </div>
-                            <h1 className="white">Coming soon!</h1>
-                            <div style={{opacity: 0.2, disabled: true, pointerEvents: 'none'}}>
-                                <Paypal currency={this.findGetParameter("currency") || this.state.value} amount={this.state.value === 'EUR' ? 12.99 : 14.99}/>
+                            {config.paypal.disabled &&
+                            <h1 className="white">Coming soon!</h1> }
+
+                            <div style={{opacity: config.paypal.disabled ? 0.2 : 1.0, disabled: config.paypal.disabled, pointerEvents: config.paypal.disabled ? 'none' : ''}}>
+                                <Paypal currency={currentCurrency} amount={currentCurrency === 'EUR' ? 12.99 : 14.99}/>
                             </div>
                         </Col>
                     </Row>
@@ -107,4 +77,4 @@ class Buy extends React.Component {
     }
 }
 
-export default Buy;
+export default withRouter(Buy);

@@ -10,11 +10,12 @@ const config =
             email: "info@starkefamilie.ch"
         },
         paypal: {
+            disabled: true,
             languages: {
                 de: "de_DE",
                 pl: "pl_PL"
             },
-            currency: "CHF",
+            default_currency: "CHF",
             clientId: "ASudgd48SDSSkudtkQAjDCkza99GKoXtaIPW66ZkTrS2v_DdabHzhkw93k3AnwvxnZ-BPmdetcSAfoyO"
         },
         translation:

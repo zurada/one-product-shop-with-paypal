@@ -9,7 +9,8 @@ class App extends React.Component {
         return (
             <Router>
                 <Route exact path="/" component={Home} />
-                <Route path="/terms" component={TermsAndConditions} />
+                <Route exact path="/:id" component={Home} />
+                <Route exact path="/show/terms" component={TermsAndConditions} />
             </Router>
         );
     }
