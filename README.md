@@ -1,8 +1,11 @@
 # one-product-shop-with-paypal
 Configurable one product shop with Paypal integration and mutli-lang
 
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Apache server
+When running with server Apache replace .htaccess from project root directory
+
 
 ## Available Scripts
 
