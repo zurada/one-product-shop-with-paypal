@@ -10,7 +10,7 @@ const config =
             email: "info@starkefamilie.ch"
         },
         paypal: {
-            disabled: true,
+            disabled: false,
             languages: {
                 de: "de_DE",
                 pl: "pl_PL"
@@ -27,7 +27,7 @@ const config =
                         description: "Früher dachte man, dass Mount Everest im Winter nicht zu besteigen ist. \n Früher dachte man, dass der Mond nicht einzunehmen ist. \n Heute denkt man, dass Frauen nicht zu verstehen sind. \n Dieses Buch beweist, dass es auch anders geht!",
                         button_about: "Über das Buch",
                         button_buy: "Buch kaufen",
-                        button_buy_price: "14.90 CHF"
+                        button_buy_price: "14.00 CHF / 12.90 EUR"
                     },
                     about: {
                         title: "Über das Buch",
@@ -42,7 +42,7 @@ const config =
                         inspire3: "Kämpf um eine gute Beziehung mit der Frau deines Lebens."
                     },
                     buy: {
-                        text_1: "Der Preis beträgt CHF 14.90 oder EUR 12.90. Sie können mit ",
+                        text_1: "Der Preis beträgt CHF 14.00 oder EUR 12.90 (mit Versandkosten). Sie können mit ",
                         text_2: " oder",
                         bold_1: "Kreditkarte",
                         bold_2: "Paypal-Konto bezahlen."
@@ -79,7 +79,7 @@ const config =
                         description: "Kiedyś uważano, że góry Everest nie da się zdobyć zimą. Kiedyś uważano, że księżyca nie można zdobyć. \n Dziś uważa się, że kobiety nie da się zrozumieć. \n \n Ta książka udowadnia, że może być inaczej",
                         button_about: "O książce",
                         button_buy: "Kup książkę",
-                        button_buy_price: "14.90 CHF"
+                        button_buy_price: "14.00 CHF / 12.90 EUR"
                     },
                     fullScreenSlideShow: {
                         inspire1: "Lubisz naprawdę trudne wyzwania? Nie poddajesz się bez walki? W takim razie spróbuj zrozumieć swoją kobietę. ",
@@ -94,7 +94,7 @@ const config =
                         description_long_3: "Wydanie tej książeczki nie byłoby możliwe, gdyby nie wsparcie wspólnoty Domowego Kościoła w Niemczech i Szwajcarii, międzynarodowego centrum Marianum z Carlsberga w Niemczech oraz gdyby nie zaangażowanie wszystkich ludzi dobrej woli, którzy przyczynili się do wydania tej książeczki. \n"
                     },
                     buy: {
-                        text_1: "Cena wynosi 14,90 CHF lub 12.90 EUR. Możesz zapłacić za pomocą swojej",
+                        text_1: "Cena wynosi 14.00 CHF lub 12.90 EUR (z kosztami przesyłki). Możesz zapłacić za pomocą swojej",
                         text_2: " lub",
                         bold_1: "karty kredytowej",
                         bold_2: "konta Paypal."
@@ -144,8 +144,8 @@ const config =
             "\n" +
             "LIEFERUNG\n" +
             "Wir sind Geschäftskunde der Schweizerischen Post und versenden unsere Pakete mit diesem Dienstleistungsunternehmen.\n" +
-            "Für Lieferungen innerhalb der Schweiz und des Fürstentums Lichtenstein verrechnen wir pro Bestellung mit max. 1-2 Bücher Pauschal mit A-Post CHF 2.00. \n" +
-            "Für Lieferungen nach Deutschland und Österreich verrechnen wir pro Bestellung mit max. 1-2 Bücher Pauschal mit A-Post CHF 7.00. Für grössere Bestellungen gelten die Preise von der Schweizer Post.\n" +
+            "Für Lieferungen innerhalb der Schweiz und des Fürstentums Lichtenstein verrechnen wir pro Bestellung mit max. 1-2 Bücher Pauschal mit A-Post CHF 3.00. \n" +
+            "Für Lieferungen nach Deutschland und Österreich verrechnen wir pro Bestellung mit max. 1-2 Bücher Pauschal mit A-Post EUR 3.00. Für grössere Bestellungen gelten die Preise von der Schweizer Post.\n" +
             "\n" +
             "Bitte beachten Sie, dass Sie (der Empfänger) für Lieferungen nach Deutschland und Österreich die Mehrwertsteuer sowie allfällige Zollgebühren übernehmen müssen.\n" +
             "\n" +

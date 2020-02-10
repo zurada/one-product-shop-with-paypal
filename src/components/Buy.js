@@ -13,7 +13,7 @@ class Buy extends React.Component {
     state = {
         options: [
             {
-                name: "CHF - 14.90",
+                name: "CHF - 14.00",
                 value: "CHF",
             },
             {
@@ -67,7 +67,7 @@ class Buy extends React.Component {
                             <h1 className="white">Coming soon!</h1> }
 
                             <div style={{opacity: config.paypal.disabled ? 0.2 : 1.0, disabled: config.paypal.disabled, pointerEvents: config.paypal.disabled ? 'none' : ''}}>
-                                <Paypal currency={currentCurrency} amount={currentCurrency === 'EUR' ? 12.99 : 14.99}/>
+                                <Paypal currency={currentCurrency} amount={currentCurrency === 'EUR' ? 12.90 : 14.00}/>
                             </div>
                         </Col>
                     </Row>
